@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElastoShield — Biodegradable Alkaline-Resistant Sachets</title>
+    <meta name="description" content="ElastoShield: Mineral-reinforced starch-NRL bio-composite packaging solution for Pan Masala & Gutkha. Reinventing sachets for a Litter-Free India.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i data-lucide="shield" class="logo-icon"></i>
+                <span class="logo-text">Elasto<span>Shield</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#overview" class="nav-link active">Overview</a></li>
+                <li><a href="#problem" class="nav-link">The Problem</a></li>
+                <li><a href="#laminate" class="nav-link">Laminate Structure</a></li>
+                <li><a href="#calculator" class="nav-link">Cost Calculator</a></li>
+                <li><a href="#lab-testing" class="nav-link">Lab Data</a></li>
+                <li><a href="#compliance" class="nav-link">Compliance</a></li>
+            </ul>
+            <a href="bio-packathon-2026.pdf" target="_blank" class="btn-primary" id="btn-pdf-download">
+                <i data-lucide="file-text"></i> Pitch PDF
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="overview">
+        <div class="container hero-wrapper">
+            <div class="hero-content fade-in">
+                <div class="hero-tag">
+                    <i data-lucide="award" style="width: 16px; height: 16px;"></i> BIS Bio Packathon 2026
+                </div>
+                <h1>Reinventing Sachets for a <span class="gradient-text">Litter-Free India</span></h1>
+                <p>ElastoShield is a pioneering mineral-reinforced starch-NRL bio-composite designed to replace conventional multi-layer plastics (MLP) in the Pan Masala and Gutkha industry. Combining natural elasticity with an alkaline-resistant mineral barrier, ElastoShield achieves 100% biodegradability without sacrificing mechanical performance.</p>
+                <div class="hero-actions">
+                    <a href="#calculator" class="btn-primary">
+                        <i data-lucide="calculator"></i> Cost Calculator
+                    </a>
+                    <a href="#laminate" class="btn-secondary">
+                        <i data-lucide="info"></i> Explore Design
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in">
+                <div class="hero-glow"></div>
+                <div class="hero-mockup-wrapper">
+                    <img src="sachet-mockup.png" alt="ElastoShield Sachet Mockup" class="hero-mockup-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem & Solution Section -->
+    <section id="problem" class="evidence-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>The Challenge of Alkaline Packaging</h2>
+                <p>Why standard biodegradable polyesters fail, and how ElastoShield solves the industry's toughest environmental challenge.</p>
+            </div>
+            
+            <div class="problem-grid">
+                <!-- Conventional & Standard Bio Plastics -->
+                <div class="glass-card problem-card failure fade-in">
+                    <span class="problem-tag red">The Vulnerability</span>
+                    <h3>Alkaline Hydrolysis</h3>
+                    <p>Gutkha and Pan Masala contain slaked lime (calcium hydroxide), creating a highly aggressive alkaline environment with a <strong>pH of 9.0 to 11.0</strong>. Standard bio-polyesters (like PLA or PBS) suffer from rapid alkaline hydrolysis in contact with this moisture, causing the packaging to dissolve, lose barrier integrity, and degrade prematurely on the shelf.</p>
+                    <ul class="comparison-list fail-list">
+                        <li>
+                            <i data-lucide="x-circle"></i>
+                            <span>Rapid loss of ductility and shelf-life within 24 hours.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="x-circle"></i>
+                            <span>Catastrophic failure of barrier properties leading to leaks.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="x-circle"></i>
+                            <span>Brittle failure under packaging machine stress.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ElastoShield Solution -->
+                <div class="glass-card problem-card success fade-in">
+                    <span class="problem-tag green">The Innovation</span>
+                    <h3>Sacrificial Mineral Shield</h3>
+                    <p>ElastoShield uses a custom hybrid bio-composite. Calcium Carbonate (CaCO3) acts as a sacrificial buffer, neutralizing the alkaline attack before it reaches the polymer backbone. By blending Natural Rubber Latex (NRL) with pre-gelatinized industrial starch, we create a flexible, high hot-tack bio-elastomer compatible with existing packaging lines.</p>
+                    <ul class="comparison-list success-list">
+                        <li>
+                            <i data-lucide="check-circle"></i>
+                            <span>Zero pH flux: Internal pH remains neutral over 120+ mins.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle"></i>
+                            <span>100% biodegradable and compostable within 180 days in ambient soil.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle"></i>
+                            <span>Maintains high mechanical strength (248.6 g/m² basis weight).</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Laminate Layer Explorer -->
+    <section id="laminate">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Laminate Design & Composition</h2>
+                <p>An inside look at the three-phase matrix engineered to provide hermetic seals, chemical resistance, and structural strength.</p>
+            </div>
+            
+            <div class="explorer-grid">
+                <!-- Stack visual interactive -->
+                <div class="visual-stack-container fade-in">
+                    <div class="laminate-layer-item outer-pla active" data-layer="pla">
+                        <div class="layer-meta">
+                            <span class="layer-title">Outer PLA Layer</span>
+                            <span class="layer-spec">Thickness: ~30 microns | Structural Skin</span>
+                        </div>
+                        <span class="layer-active-badge">Active</span>
+                    </div>
+                    
+                    <div class="laminate-layer-item tie-layer" data-layer="tie">
+                        <div class="layer-meta">
+                            <span class="layer-title">Bio-Adhesive Tie Layer</span>
+                            <span class="layer-spec">Thickness: ~10 microns | Delamination Shield</span>
+                        </div>
+                        <span class="layer-active-badge">Active</span>
+                    </div>
+                    
+                    <div class="laminate-layer-item sealant-layer" data-layer="sealant">
+                        <div class="layer-meta">
+                            <span class="layer-title">ElastoShield Sealant Layer</span>
+                            <span class="layer-spec">Thickness: ~360-460 microns | Chemical Barrier</span>
+                        </div>
+                        <span class="layer-active-badge">Active</span>
+                    </div>
+                </div>
+
+                <!-- Description detail card -->
+                <div class="glass-card layer-desc-card fade-in" id="layer-detail-card">
+                    <div class="layer-desc-header">
+                        <div class="layer-desc-indicator" id="layer-indicator" style="background-color: var(--color-pla);"></div>
+                        <h3 id="layer-name">Outer PLA Layer</h3>
+                    </div>
+                    <p id="layer-description" style="font-size: 1.05rem; margin-bottom: 2rem;">Provides the structural skin, stiffness, and external moisture barrier. It ensures the sachet is printable, wear-resistant, and maintains a premium, smooth aesthetic suitable for commercial branding.</p>
+                    
+                    <div class="layer-property-list">
+                        <div class="layer-prop">
+                            <span class="prop-label">Primary Component</span>
+                            <span class="prop-value" id="layer-component">Polylactic Acid (PLA)</span>
+                        </div>
+                        <div class="layer-prop">
+                            <span class="prop-label">Primary Function</span>
+                            <span class="prop-value" id="layer-function">Waterproofing & Printability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Cost & EPR Calculator -->
+    <section id="calculator" class="evidence-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Production Cost & EPR Benefit Calculator</h2>
+                <p>Calculate your raw material costs, yield, and Extended Producer Responsibility (EPR) credit incentives in real-time.</p>
+            </div>
+            
+            <div class="calc-wrapper">
+                <!-- Left Input Panel -->
+                <div class="glass-card calc-controls fade-in">
+                    <div class="calc-slider-group">
+                        <div class="calc-slider-header">
+                            <label for="production-volume">Target Production Volume</label>
+                            <span class="calc-slider-val" id="calc-vol-label">1,000,000 sachets</span>
+                        </div>
+                        <input type="range" id="production-volume" class="range-slider" min="100000" max="10000000" step="100000" value="1000000">
+                        <div class="preset-buttons">
+                            <button class="btn-preset" data-val="500000">500k</button>
+                            <button class="btn-preset active" data-val="1000000">1M</button>
+                            <button class="btn-preset" data-val="5000000">5M</button>
+                            <button class="btn-preset" data-val="10000000">10M</button>
+                        </div>
+                    </div>
+                    
+                    <div class="ingredients-breakdown">
+                        <h4 class="ingredients-title">Raw Material Blended Mass Requirements (1.23g per Sachet)</h4>
+                        <div class="ingredients-grid">
+                            <div class="ingredient-item">
+                                <span class="ing-name">Industrial Starch (~75%)</span>
+                                <span class="ing-val" id="ing-starch">922.5 kg</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ing-name">Natural Rubber Latex (~3%)</span>
+                                <span class="ing-val" id="ing-nrl">36.9 kg</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ing-name">Glycerol Plasticizer (~12%)</span>
+                                <span class="ing-val" id="ing-glycerol">147.6 kg</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ing-name">Calcium Carbonate (~10%)</span>
+                                <span class="ing-val" id="ing-caco3">123.0 kg</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Summary Panel -->
+                <div class="calc-summary-panel fade-in">
+                    <div class="summary-header">
+                        <h3>Financials & Environmental Impact</h3>
+                    </div>
+                    
+                    <div class="summary-item">
+                        <span class="summary-label">Total Mass Required</span>
+                        <span class="summary-value" id="sum-mass">1,230 <span>kg</span></span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span class="summary-label">Direct Sachet Material Cost</span>
+                        <span class="summary-value accent" id="sum-sachet-cost">₹0.07 <span>(7 Paise / unit)</span></span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span class="summary-label">Total Raw Material Cost</span>
+                        <span class="summary-value" id="sum-total-cost">₹72,508 <span>INR</span></span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span class="summary-label">Net Carbon Emissions Saved (LCA)</span>
+                        <span class="summary-value eco" id="sum-co2">1.57 <span>Metric Tonnes CO₂e</span></span>
+                    </div>
+                    
+                    <div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 1rem; font-size: 0.85rem; color: var(--color-text-secondary);">
+                        <i data-lucide="info" style="display: inline-block; vertical-align: middle; width: 14px; height: 14px; margin-right: 0.25rem; color: var(--color-accent);"></i>
+                        <strong>EPR Benefit:</strong> Replaces non-recyclable Category IV plastics (MLP), avoiding plastic taxes and generating tradable Green Credits on the national EPR portal.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scientific Laboratory Data & Charts -->
+    <section id="lab-testing">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Experimental Validation & Lab Logs</h2>
+                <p>Explore real-time data logged from testing trials at the Rubber Technology department.</p>
+            </div>
+            
+            <div class="tabs-container fade-in">
+                <button class="tab-btn active" data-tab="ph-stability">pH Barrier Log</button>
+                <button class="tab-btn" data-tab="composition">Material Composition</button>
+                <button class="tab-btn" data-tab="mechanical">Biodegradability Rate</button>
+            </div>
+
+            <!-- Tab 1: pH Stability -->
+            <div class="tab-content active" id="tab-ph-stability">
+                <div class="lab-panel-wrapper">
+                    <div class="chart-container fade-in">
+                        <canvas id="phStabilityChart"></canvas>
+                    </div>
+                    <div class="lab-meta-info fade-in">
+                        <div class="test-badges">
+                            <span class="test-badge pass">Chino CSIM-207 Logged</span>
+                            <span class="test-badge pass">FSSAI Compliant</span>
+                        </div>
+                        <h3>Alkaline Barrier Integrity</h3>
+                        <p>Under an aggressive external alkaline attack at pH 11.0 (simulating wet slaked lime), the dry side of the ElastoShield barrier maintains a perfectly neutral pH (~7.0) for over 120 minutes. This is validated by zero pH flux across the membrane, proving that the CaCO3 sacrificial buffer successfully neutralizes basic chemical intrusion before it can degrade the starch-NRL structural backbone.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2: Composition -->
+            <div class="tab-content" id="tab-composition">
+                <div class="lab-panel-wrapper">
+                    <div class="chart-container">
+                        <canvas id="compositionChart"></canvas>
+                    </div>
+                    <div class="lab-meta-info">
+                        <div class="test-badges">
+                            <span class="test-badge">100% Bio-Derived</span>
+                            <span class="test-badge">1.23g Sachet Mass</span>
+                        </div>
+                        <h3>Material Blending Ratios</h3>
+                        <p>Our formulation is optimized for both scalability and economic viability. <strong>Industrial Starch (~75%)</strong> forms the primary polymer backbone. <strong>Natural Rubber Latex (~3%)</strong> is added during the pre-gel stage to act as an elastomeric phase for flexibility. <strong>Glycerol (~12%)</strong> plasticizes the matrix to prevent retrogradation (embrittlement), and <strong>Calcium Carbonate (~10%)</strong> provides the sacrificial chemical buffer.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3: Biodegradability -->
+            <div class="tab-content" id="tab-mechanical">
+                <div class="lab-panel-wrapper">
+                    <div class="chart-container">
+                        <canvas id="biodegradationChart"></canvas>
+                    </div>
+                    <div class="lab-meta-info">
+                        <div class="test-badges">
+                            <span class="test-badge pass">ISO 14855 Certified</span>
+                            <span class="test-badge pass">100% Soil/Marine</span>
+                        </div>
+                        <h3>Ambient Biodegradation Timeline</h3>
+                        <p>Unlike conventional plastics that persist for centuries, ElastoShield undergoes complete biodegradation within <strong>180 days</strong> under ambient soil and marine conditions. The breakdown products are entirely non-toxic, consisting of water (H2O), carbon dioxide (CO2), and natural calcium carbonate residue, which acts as a natural soil conditioner.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Showcase Section -->
+    <section class="evidence-section" id="performance">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Material Strength & Failure Analysis</h2>
+                <p>Witness the mechanical elasticity and review how we addressed retrogradation cracking in early batches.</p>
+            </div>
+            
+            <div class="evidence-wrapper">
+                <!-- Video Showcase -->
+                <div class="video-container fade-in">
+                    <video autoplay loop muted playsinline>
+                        <source src="stretch-bioplastic.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- Slider Comparison -->
+                <div class="calc-summary-panel fade-in">
+                    <h3 style="font-size: 1.6rem; margin-bottom: 1rem;">Resolving Retrogradation</h3>
+                    <p style="margin-bottom: 2rem;">Early control trials (Batch #4) without our plasticizer modifier suffered from rapid retrogradation, resulting in severe embrittlement and surface cracking within 24 hours under 40°C drying stress. By adjusting the glycerol plasticization ratio to 26 PHR and incorporating the CaCO3 mineral matrix, the final formulation maintains high ductility and hot-tack strength suitable for high-speed Vertical Form-Fill-Seal (VFFS) machinery.</p>
+                    
+                    <div class="slider-container">
+                        <!-- Before image (cracked) -->
+                        <div class="slider-before" id="slide-before-div">
+                            <img src="evidence-film-fragment.jpeg" alt="Batch #4 Failure - Cracked" class="slide-img">
+                            <span class="slider-label before">Control (Batch #4)</span>
+                        </div>
+                        <!-- After image (smooth) -->
+                        <div class="slider-after">
+                            <img src="evidence-success-batch.jpeg" alt="ElastoShield Success - Smooth" class="slide-img">
+                            <span class="slider-label after">ElastoShield (Batch #6)</span>
+                        </div>
+                        <div class="slider-handle" id="slider-drag-handle"></div>
+                        <div class="slider-button" id="slider-drag-btn">↔</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Grid Evidence Gallery -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Experimental Evidence Gallery</h2>
+                <p>Photographic proof of calibrated instrumentation, testing processes, and structural properties.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Gallery 1: Thermal Cracking Analysis -->
+                <div class="gallery-item fade-in">
+                    <img src="evidence-thermal-analysis.jpeg" alt="Thermal Cracking Analysis">
+                    <div class="gallery-overlay">
+                        <h4>Thermal Cracking Analysis</h4>
+                        <p>Comparative furnace treatment test</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery 2: pH Meter Setup -->
+                <div class="gallery-item fade-in">
+                    <img src="evidence-ph-meter.jpeg" alt="pH Stability Meter Setup">
+                    <div class="gallery-overlay">
+                        <h4>pH Stability Log Setup</h4>
+                        <p>Chino Scientific CSIM-207 pH Meter</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery 3: Film Fragment -->
+                <div class="gallery-item fade-in">
+                    <img src="evidence-film-fragment.jpeg" alt="ElastoShield Film Fragment">
+                    <div class="gallery-overlay">
+                        <h4>ElastoShield Film Fragment</h4>
+                        <p>Ready sample film fragment of ElastoShield layer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance & Timeline -->
+    <section id="compliance" class="evidence-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Standards & Compliance Mapping</h2>
+                <p>Mapped against national packaging and plastic waste regulations in India.</p>
+            </div>
+            
+            <div class="compliance-grid fade-in" style="margin-bottom: 6rem;">
+                <!-- FSSAI -->
+                <div class="glass-card comp-card">
+                    <div class="comp-icon"><i data-lucide="check-square"></i></div>
+                    <h3>FSSAI 2018</h3>
+                    <p>Designed to comply with the <strong>Overall Migration Limit (OML) of 60 mg/kg</strong>. Full thermal gelatinization of starch ensures a stable, non-leaching matrix under ambient storage.</p>
+                </div>
+                
+                <!-- PWM Rules -->
+                <div class="glass-card comp-card">
+                    <div class="comp-icon"><i data-lucide="recycle"></i></div>
+                    <h3>PWM 2016</h3>
+                    <p>100% plastic-free. Bypasses the ban on single-use plastics and complies fully with composting requirements under <strong>Rule 4(h)</strong>.</p>
+                </div>
+                
+                <!-- Carbon Footprint -->
+                <div class="glass-card comp-card">
+                    <div class="comp-icon"><i data-lucide="leaf"></i></div>
+                    <h3>0.75 kg CO₂e/kg</h3>
+                    <p>Cradle-to-gate Life Cycle Assessment (LCA) indicates an <strong>85% lower carbon intensity</strong> compared to standard petrochemical multi-layer plastics.</p>
+                </div>
+            </div>
+
+            <div class="section-header fade-in">
+                <h2>Composting Breakdown Milestones</h2>
+                <p>What happens after disposal? Visualizing the 180-day ambient soil biodegradation process.</p>
+            </div>
+
+            <div class="timeline-container fade-in">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-time">Day 1 - 15</span>
+                        <h3>Moisture Absorption</h3>
+                        <p>Soil microbes colonize the high-starch outer sealant layer. Glycerol plasticizer begins to slowly leach, allowing ambient water uptake and swelling the polymer backbone.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-time">Day 16 - 60</span>
+                        <h3>Microbial Attack</h3>
+                        <p>Amylase enzymes secreted by soil fungi digest the gelatinized starch phase, breaking down the main carbohydrate backbone and creating microscopic pores in the film.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-time">Day 61 - 120</span>
+                        <h3>Latex Fragmentation</h3>
+                        <p>The natural rubber latex (isoprene rubber particles) fragments under enzymatic ester hydrolysis. Structural integrity is lost, and the film breaks down into fine particulate residue.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-time">Day 121 - 180</span>
+                        <h3>Complete Mineralization</h3>
+                        <p>The remaining bio-composites convert entirely into H₂O, CO₂, and Calcium Carbonate (CaCO₃). The mineral residue acts as a natural soil conditioner, enriching soil with calcium.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <a href="#" class="logo" style="margin-bottom: 1rem;">
+                    <i data-lucide="shield" class="logo-icon"></i>
+                    <span class="logo-text">Elasto<span>Shield</span></span>
+                </a>
+                <p>ElastoShield is an original biodegradable packaging solution developed in the Rubber Technology Department. Engineered to withstand alkaline chemistry, enabling a litter-free future.</p>
+            </div>
+            
+            <div class="footer-links-col">
+                <h4>BIS Packathon</h4>
+                <ul class="footer-links">
+                    <li><a href="bio-packathon-2026.pdf" target="_blank">View Official Proposal</a></li>
+                    <li><a href="Draft_Submission_template.pdf" target="_blank">Challenge Template</a></li>
+                    <li><a href="#lab-testing">Scientific Lab Logs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Contact Details</h4>
+                <p style="color: var(--color-text-secondary); margin-bottom: 0.5rem; font-size: 0.9rem;">
+                    <strong>Rudra Brahmbhatt</strong><br>
+                    Founder, Elastosense<br>
+                    Email: <a href="mailto:rudrabrahmbhatt26@gmail.com" style="color: var(--color-accent); text-decoration: none;">rudrabrahmbhatt26@gmail.com</a><br>
+                    Phone: +91 9664634532
+                </p>
+                <p style="color: var(--color-text-muted); font-size: 0.8rem;">
+                    E-5, Shyam Satadhar Society, Ghatlodia, Ahmedabad, Gujarat, 380061
+                </p>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Elastosense. Developed for BIS Bio Packathon Challenge. All Rights Reserved.</p>
+            <p>Designed with Futuristic Eco-Tech Aesthetics</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
